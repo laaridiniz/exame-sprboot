@@ -15,9 +15,9 @@ const router = createRouter({
       component: () => import('../views/UsuarioView.vue')
     },
     {
-      path: '/anotacao',
-      name: 'anotacao',
-      component: () => import('../views/AnotacaoView.vue')
+      path: '/encomenda',
+      name: 'encomenda',
+      component: () => import('../views/EncomendaView.vue')
     },
     {
       path: '/login',

@@ -75,6 +75,7 @@ create table enc_encomenda (
   enc_valor_declarado numeric(10,2),
   enc_data_hora_prevista datetime not null,
   enc_data_hora_entrega datetime,
+  enc_cancelamento datetime,
   primary key (enc_rastreio)
 );
 

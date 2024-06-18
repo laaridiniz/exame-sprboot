@@ -31,6 +31,9 @@ public class Encomenda {
     @Column(name = "enc_data_hora_entrega")
     private LocalDateTime dataHoraEntrega;
 
+    @Column(name = "enc_cancelamento")
+    private LocalDateTime cancelamento;
+
     public Encomenda() {}
 
     public Encomenda(String conteudo, LocalDateTime dataHoraPrevista) {
@@ -68,6 +71,14 @@ public class Encomenda {
 
     public void setDataHoraEntrega(LocalDateTime dataHoraEntrega) {
         this.dataHoraEntrega = dataHoraEntrega;
+    }
+
+    public LocalDateTime getCancelamento() {
+        return cancelamento;
+    }
+
+    public void setCancelamento(LocalDateTime cancelamento) {
+        this.cancelamento = cancelamento;
     }
 
     public BigDecimal getValorDeclarado() {
